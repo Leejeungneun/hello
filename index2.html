@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts House</title>
+    <link rel="stylesheet" href="./css/styles2.css">
+</head>
+<body>
+
+        <div class="top">
+           <div class="main">
+               <img src="./img/main.png" alt="main" class="main">
+            
+                 <div class="logo">
+                     <img src="./img/HW.png" alt="Hogwarts Logo" class="logo" onclick="goMain();">
+                </div>
+           </div>
+
+                <div class="logo2">
+                    <img src="./img/under1.png" alt="Hogwarts Logo2" class="logo2">
+                </div>
+
+            
+            
+
+           
+
+            <div class ="ul">
+                <ul class="mainBtn">
+                    <li><button type="button" onclick="goMenuPage('G');" class="red">Gryffindor</button></li>
+                 <li><button type="button" onclick="goMenuPage('H');" class="yellow">Hufflepuff</button></li>
+                    <li><button type="button" onclick="goMenuPage('R');" class="blue">Ravenclaw</button></li>
+                    <li><button type="button" onclick="goMenuPage('S');" class="green">Slytherin</button></li>
+                </ul>
+            </div>
+        </div>
+ 
+    
+<script>
+    function goMain(){
+        location.href="./index2.html";
+    }
+
+    function goMenuPage(title){
+        location.href="./html/menu"+title+".html";
+    }
+</script>
+</body>
+</html>
